@@ -37,7 +37,7 @@ object IssuerREST extends RestHelper {
 		case (XmlSelect, c, _) => c.toXml
 	}
 
-	serveJx {
+	serveJx[CDD] {
 		"api" / "test" prefixJx {
 		    case Get("cdd" :: Nil, _) => getCdd
 		}
