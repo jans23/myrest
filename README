@@ -1,6 +1,2 @@
 This Lift application has been setup with SBT 0.11. Please start the application with the provided "sbt" file or the following command line:
 java -Xms512M -Xmx1536M -Xss1M -XX:+CMSClassUnloadingEnabled -XX:MaxPermSize=384M -jar `dirname $0`/sbt-launch.jar "$@" update ~container:start
-
-You will receive the following compilation error:
-myrest/src/main/scala/code/lib/IssuerREST.scala:42: No implicit view available from code.lib.IssuerREST.CDD => T.
-[error] 		    case Get("cdd" :: Nil, _) => getCdd
